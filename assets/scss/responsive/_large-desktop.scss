@@ -1,0 +1,232 @@
+@media (max-width: 1199.98px) {
+    .custom-navbar {
+        .navbar-brand {
+            img {
+                width: 40px;
+                height: auto;
+            }
+        }
+
+        ul {
+            li {
+                padding: 5px 10px;
+            }
+        }
+    }
+
+    .section-home {
+
+        .section-home-main {
+            .main-home-content {
+                .home-tersedia {
+                    margin: 20px 0 0 0;
+                    font-size: 0.9em;
+                }
+
+                ul {
+                    margin: 0;
+                }
+            }
+        }
+        .home-wellcome {
+            font-size: 2em;
+        }
+
+        .logo-gofood {
+            width: 120px !important;
+            height: auto !important;
+        }
+
+        .logo-grabfood {
+            width: 150px !important;
+            height: auto !important;
+        }
+    }
+
+    .section-about {
+        height: auto;
+        margin: 100px 0 0 0;
+        padding: 50px 0 0 0;
+        
+        .about-judul {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        .about-subjudul {
+            font-size: 1.4em;
+            margin: 50px 0 10px 0;
+        }
+
+        .about-text {
+            margin: 0 0 70px 0;
+        }
+
+        .kelebihan {
+            padding: 20px 0;
+
+            .card-custom {
+                width: 430px;
+                height: 230px;
+
+                .card-judul {
+                    font-size: 1.4em;
+                }
+            }
+        }
+    }
+
+    .section-gallery {
+        height: auto;
+        margin: 50px 0 0 0;
+    
+        .section-gallery-main {
+            padding: 50px 0 0 0;
+
+            .gallery-judul {
+                font-size: 2em;
+            }
+
+            .gallery {
+                
+                .img-gallery {
+                    width: auto;
+                    height: 290px;
+                    margin: 0 0 30px 0;
+                }
+            }
+        }
+    }
+
+    .section-produk {
+        height: auto;
+        min-height: auto;
+        margin: 50px 0 0 0;
+
+        .section-produk-main {
+            margin: 0;
+            padding: 50px 0 0 0;
+
+            .produk-judul {
+                font-size: 2em;
+                padding: 0;
+            }
+
+            .img-produk {
+                height: 290px;
+                margin: 0 0 30px 0;
+            }
+        }
+    }
+
+    .section-beliga {
+        margin: 100px 0 50px 0;
+
+        .beliga-judul {
+            font-size: 2em;
+        }
+
+        .logo-beligofood {
+            width: 80px;
+            height: auto;
+            margin: 15px 0 0 0;
+        }
+
+        .btn-hubungi {
+            padding: 5px 20px;
+        }
+    }
+
+    .section-testimoni {
+        padding: 50px 0 0 0;
+        
+        .testimoni-judul {
+            font-size: 2em;
+            padding: 0;
+            margin: 0;
+        }
+
+        .splide__track {
+            padding: 50px 0;
+        }
+
+        .card-testi {
+            width: 290px;
+            height: 230px;
+
+            .card-testi-main {
+                padding: 30px;
+            
+                .testi-rate {
+                    font-size: 0.9em;
+                    margin: 0 0 10px 0;
+                }
+
+                .testi-text {
+                    font-size: 0.9em;
+                    margin: 0 0 10px 0;
+                }
+
+                .testi-nama {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .section-kemitraan {
+        padding: 50px 0 0 0;
+
+        .kemitraan-main {
+            padding: 0 0 100px 0;
+
+            .kemitraan-judul {
+                font-size: 2em;
+            }
+
+            .price {
+                
+                .card-price {
+                    width: 280px;
+
+                    .card-price-main {
+                        padding: 30px 40px;
+
+                        .price-paket {
+                            font-size: 1em;
+                        }
+
+                        .price-harga {
+                            font-size: 1.2em;
+                            margin: 3px 0 10px 0;
+                        }
+
+                        .price-rincian {
+                            font-size: 0.8em;
+                        }
+                    }
+
+                    .btn-download {
+                        font-size: 0.9em;
+                        margin: 10px 0 0 0;
+                    }
+                }
+            }
+
+            .pendaftaran {
+
+                .judul-form {
+                    font-size: 1.2em;
+                }
+
+                .pendaftaran-text {
+                    font-size: 0.9em;
+                }
+
+                .btn-kirim {
+                    font-size: 0.9em !important;
+                }
+            }
+        }
+    }
+}

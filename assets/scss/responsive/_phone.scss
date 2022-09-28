@@ -1,0 +1,33 @@
+@media (max-width: 575.98px) {
+    .d-xs-none {
+        display: none !important;
+    }
+    
+    .img-home {
+        width: 350px !important;
+    }
+
+    .card-custom {
+        width: 330px !important;
+        height: 280px !important;
+    }
+
+    .beliga-judul {
+        font-size: 1em !important;
+    }
+
+    .foother-main {
+
+        .hub {
+            margin: 50px 0 0 0;
+        }
+
+        ul {
+            text-align: left !important;
+
+            li {
+                text-align: left !important;
+            }
+        }
+    }
+}

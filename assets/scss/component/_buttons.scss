@@ -1,0 +1,106 @@
+@mixin btn-hubungi {
+    font-family: 'Bold';
+    color: $text-color-orange;
+    background-color: $bg-color-white;
+    border: 2px solid $bg-color-white;
+    border-radius: 10px;
+    padding: 7px 20px;
+    transition: 0.5s;
+
+    &:hover {
+        color: $text-color-white;
+        background-color: transparent;
+        border: 2px solid $bg-color-white;
+        transition: 0.5s;
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+@mixin btn-download {
+    font-family: 'Bold';
+    font-size: 1em;
+    color: $text-color-orange;
+    background-color: $bg-color-white;
+    border: 2px solid $bg-color-orange;
+    border-radius: 10px;
+    padding: 7px 20px;
+    margin: 20px 0 0 0;
+    transition: 0.5s;
+
+    &:hover {
+        color: $text-color-white;
+        background-color: $bg-color-orange;
+        border: 2px solid $bg-color-orange;
+        transition: 0.5s;
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+@mixin btn-kirim {
+    font-family: 'Bold';
+    font-size: 1em;
+    color: $text-color-white;
+    background-color: $bg-color-orange;
+    border: 2px solid $bg-color-orange;
+    border-radius: 10px;
+    padding: 7px 50px;
+    margin: 20px 0 0 0;
+    transition: 0.5s;
+
+    &:hover {
+        color: $text-color-orange;
+        background-color: $bg-color-white;
+        border: 2px solid $bg-color-orange;
+        transition: 0.5s;
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+@mixin btn-toggle {
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: $bg-color-black;
+        margin: 6px 0;
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+}
+
+@mixin btn-close {
+    .bar4,
+    .bar5,
+    .bar6 {
+        width: 35px;
+        height: 5px;
+        background-color: $bg-color-black;
+        margin: 6px 0;
+    }
+
+    .bar4 {
+        transform: translate(0, 11px) rotate(-45deg);
+    }
+
+    .bar5 {
+        opacity: 0;
+    }
+
+    .bar6 {
+        transform: translate(0, -11px) rotate(45deg);
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+}
