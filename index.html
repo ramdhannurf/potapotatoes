@@ -69,7 +69,7 @@
                         <a href="#about" class="fo-nav nav-menu-list">Tentang Kami</a>
                     </li>
                     <li>
-                        <a href="#gallery" class="fo-nav nav-menu-list" >Gallery</a>
+                        <a href="#gallery" class="fo-nav nav-menu-list">Gallery</a>
                     </li>
                     <li>
                         <a href="#produk" class="fo-nav nav-menu-list">Produk</a>
@@ -177,7 +177,13 @@
                                 <img class="img-gallery" src="assets/img/gallery/pota/BSDle6yBgiN.jpg" alt="" />
                             </div>
                             <div class="col-sm d-flex align-items-center justify-content-center">
-                                <img class="img-gallery" src="assets/img/gallery/pota/IMG02064-20130313-1126.jpg" alt="" />
+                                <a
+                                    href="gallery.html"
+                                    class="img-gallery img-gallery-text d-flex align-items-center justify-content-center"
+                                    data-custom="gallery-last-child-box"
+                                >
+                                    Lihat Semua
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -215,15 +221,6 @@
                                 <div class="col d-flex justify-content-center">
                                     <img class="img-produk" src="assets/img/gallery/PotaFinchi.jpg" alt="" />
                                 </div>
-                                <!-- <div class="col">
-                                    <h1 class="nama-produk text-center">Pota Potatoes</h1>
-                                </div>
-                                <div class="col">
-                                    <p class="deskripsi-produk">
-                                        Bagi sebagaian besar masyarakat nusantara, gorengan merupakan makanan khas dari Sebagian kota dan daerah se Nusantara.
-                                        Bahan dengan adonan celup ini terbuat dari campuran tepung dan bahan khas lainnya
-                                    </p>
-                                </div> -->
                             </div>
                         </div>
                         <div class="col-sm d-flex align-items-center justify-content-center">
@@ -646,119 +643,6 @@
     <script src="assets/js/jquery-3.6.1.min.js"></script>
     <script src="assets/js/owl.carousel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.17/dist/js/splide.min.js"></script>
-    <script type="text/javascript">
-        document.addEventListener("DOMContentLoaded", function () {
-            var splide = new Splide(".splide", {
-                type: "loop",
-                perPage: 3,
-                perMove: 1,
-                pagination: false,
-                arrows: false,
-            });
-            splide.mount();
-        });
-
-        document.addEventListener("DOMContentLoaded", function () {
-            var dua = new Splide(".dua", {
-                type: "loop",
-                perPage: 1,
-                perMove: 1,
-                pagination: false,
-                arrows: false,
-            });
-            dua.mount();
-        });
-
-        $("#navMenuOpen").click(function () {
-            $("#openNav").css("display", "block");
-        });
-
-        $("#navMenuClose").click(function () {
-            $(".nav-menu").css("display", "none");
-        });
-
-        $(".nav-menu-list").click(function () {
-            $(".nav-menu").css("display", "none");
-        });
-
-        $(document).ready(function () {
-            $(".owl-carousel").owlCarousel({
-                loop: true,
-                center: true,
-                items: 1,
-                autoplay: true,
-                autoplayTimeout: 500,
-            });
-        });
-
-        function send() {
-            var name = $("#nama").val();
-            var jenisid = $("#jenis-id").val();
-            var noid = $("#noid").val();
-            var aktp = $("#alamat-ktp").val();
-            var kktp = $("#kota-ktp").val();
-            var an = $("#alamat-now").val();
-            var kn = $("#kota-now").val();
-            var job = $("#pekerjaan").val();
-            var nhp = $("#no-hp").val();
-            var email = $("#email").val();
-            var lmitra = $("#lokasi-mitra").val();
-            var amitra = $("#alamat-mitra").val();
-            var kmitra = $("#kota-mitra").val();
-            var ppilih = $("#paket-dipilih").val();
-            var know = $("#knowing").val();
-            window.location.href =
-                "mailto:ramdhannurf@gmail.com?subject=Pendaftaran - " +
-                name +
-                " (" +
-                email +
-                ")" +
-                "&body=" +
-                "Nama : " +
-                name +
-                "%0D%0A" +
-                "Jenis ID : " +
-                jenisid +
-                "%0D%0A" +
-                "Nomor ID : " +
-                noid +
-                "%0D%0A" +
-                "Alamat Sesuai ID : " +
-                aktp +
-                "%0D%0A" +
-                "Kota Sesuai ID : " +
-                kktp +
-                "%0D%0A" +
-                "Alamat Sekarang : " +
-                an +
-                "%0D%0A" +
-                "Kota Sekarang : " +
-                kn +
-                "%0D%0A" +
-                "Pekerjaan : " +
-                job +
-                "%0D%0A" +
-                "Nomor HP : " +
-                nhp +
-                "%0D%0A" +
-                "Email : " +
-                email +
-                "%0D%0A" +
-                "Lokasi Mitra : " +
-                lmitra +
-                "%0D%0A" +
-                "Alamat Mitra : " +
-                amitra +
-                "%0D%0A" +
-                "Kota Mitra : " +
-                kmitra +
-                "%0D%0A" +
-                "Paket Yang Dipilih : " +
-                ppilih +
-                "%0D%0A" +
-                "Mengetahui Pota Potatoes Indonesia Dari : " +
-                know;
-        }
-    </script>
+    <script src="assets/js/main.js"></script>
 </html>
 <!-- jenis-id noid alamat-ktp kota-ktp alamat-now kota-now pekerjaan no-hp email lokasi-mitra alamat-mitra kota-mitra paket-dipilih knowing -->
