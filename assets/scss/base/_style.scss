@@ -234,7 +234,6 @@ body {
                     font-size: 1.8em;
                     text-decoration: none;
                     color: $text-color-orange;
-                    margin: 0;
                 }
             }
         }
@@ -477,36 +476,114 @@ body {
     
     .section-news-main {
         padding: 50px 0 100px 0;
+        
+        .col {
+            width: 400px;
+            margin-right: auto !important;
+            margin-left: auto !important;
+        }
 
         .news-judul {
             font-family: 'Bold';
             color: $text-color-orange;
         }
 
+        .all-news-wrap {
+            margin: 50px 20px 30px 0;
+
+            .all-news {
+                font-family: 'Bold';
+                font-size: 1em;
+                color: $text-color-black;
+                text-decoration: none;
+                transition: 0.5s;
+
+                &:hover {
+                    color: $text-color-orange;
+                    transition: 0.5s;
+                }
+            }
+        }
+
         .content {
-            margin: 50px 0 0 0;
 
             .card-news {
-                width: auto;
-                height: auto;
-                background-color: $bg-color-white;
-                border-radius: 40px;
-                box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.137);
                 transition: 0.5s;
         
                 &:hover {
-                    transform: scale(1.05);
+                    transform: scale(1.01);
                     transition: 0.5s;
                 }
 
+                a {
+                    text-decoration: none;
+                }
+
                 .card-news-main {
-                    padding: 30px;
+                    margin: 0 0 50px 0;
+
+                    ul {
+                        display: inline;
+                        padding: 0;
+
+                        li {
+                            display: inline-block;
+                            list-style: none;
+                            margin: 20px 0 15px 0;
+                        }
+                    }
+
+                    .publish-date,
+                    .publish-by {
+                        font-size: 0.8em;
+                        color: $text-color-black;
+                        margin: 0;
+                    }
 
                     .img-news {
-                        width: 200px;
-                        height: auto;
+                        width: 400px;
+                        height: 400px;
                         aspect-ratio: 1/1;
-                        border-radius: 20px;
+                        border-radius: 0;
+                    }
+
+                    .judul-news {
+                        font-family: 'Bold';
+                        font-size: 1.2em;
+                        color: $text-color-black;
+                        margin: 0 0 10px 0;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                    }
+
+                    .news-text {
+                        font-family: 'Reguler';
+                        font-size: 1em;
+                        color: $text-color-black;
+                        margin: 0 0 20px 0;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 4;
+                    }
+
+                    .judul-news,
+                    .news-text {
+                        padding: 0 20px 0 0;
+                    }
+
+                    .baca-selengkapnya {
+                        font-family: 'Bold';
+                        font-size: 1em;
+                        color: $text-color-black;
+                        transition: 0.5s;
+
+                        &:hover {
+                            color: $text-color-orange;
+                            transition: 0.5s;
+                        }
                     }
                 }
             }
@@ -666,7 +743,55 @@ body {
                     font-size: 1.8em;
                     text-decoration: none;
                     color: $text-color-orange;
-                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+.detail-news {
+    margin: 50px 0 50px 0;
+
+    .detail-news-main {
+        padding: 50px 0 0 0;
+
+        .img-detail-news {
+            width: 100%;
+            height: auto;
+        }
+
+        .detail-news-judul {
+            font-family: 'Bold';
+            font-size: 2em;
+            color: $text-color-orange;
+            margin: 50px 0 0 0;
+        }
+
+        .detail-news-publish {
+            margin: 10px 0 30px 0;
+            font-size: 0.9em;
+        }
+
+        .detail-news-text {
+            font-size: 1em;
+        }
+        .detail-news-sumber {
+            font-family: 'Bold';
+
+            a {
+                font-family: 'Reguler';
+                text-decoration: none;
+            }
+        }
+
+        .section-news {
+            margin: 100px 0 0 0;
+
+            .section-news-main {
+                padding: 0;
+
+                .news-judul {
+                    margin: 30px 0 50px 0;
                 }
             }
         }

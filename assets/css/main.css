@@ -31,6 +31,14 @@
   border: 4px solid #f7941d;
 }
 
+[data-custom=all-article-margin] {
+  margin: 0 !important;
+}
+
+[data-custom=all-article-content-margin] {
+  margin: 50px 0 0 0 !important;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -236,7 +244,6 @@ body {
   font-size: 1.8em;
   text-decoration: none;
   color: #f7941d;
-  margin: 0;
 }
 
 .section-produk {
@@ -483,33 +490,96 @@ body {
 .section-news .section-news-main {
   padding: 50px 0 100px 0;
 }
+.section-news .section-news-main .col {
+  width: 400px;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
 .section-news .section-news-main .news-judul {
   font-family: "Bold";
   color: #f7941d;
 }
-.section-news .section-news-main .content {
-  margin: 50px 0 0 0;
+.section-news .section-news-main .all-news-wrap {
+  margin: 50px 20px 30px 0;
+}
+.section-news .section-news-main .all-news-wrap .all-news {
+  font-family: "Bold";
+  font-size: 1em;
+  color: #333333;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.section-news .section-news-main .all-news-wrap .all-news:hover {
+  color: #f7941d;
+  transition: 0.5s;
 }
 .section-news .section-news-main .content .card-news {
-  width: auto;
-  height: auto;
-  background-color: #fff;
-  border-radius: 40px;
-  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.137);
   transition: 0.5s;
 }
 .section-news .section-news-main .content .card-news:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
   transition: 0.5s;
 }
+.section-news .section-news-main .content .card-news a {
+  text-decoration: none;
+}
 .section-news .section-news-main .content .card-news .card-news-main {
-  padding: 30px;
+  margin: 0 0 50px 0;
+}
+.section-news .section-news-main .content .card-news .card-news-main ul {
+  display: inline;
+  padding: 0;
+}
+.section-news .section-news-main .content .card-news .card-news-main ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 20px 0 15px 0;
+}
+.section-news .section-news-main .content .card-news .card-news-main .publish-date,
+.section-news .section-news-main .content .card-news .card-news-main .publish-by {
+  font-size: 0.8em;
+  color: #333333;
+  margin: 0;
 }
 .section-news .section-news-main .content .card-news .card-news-main .img-news {
-  width: 200px;
-  height: auto;
+  width: 400px;
+  height: 400px;
   aspect-ratio: 1/1;
-  border-radius: 20px;
+  border-radius: 0;
+}
+.section-news .section-news-main .content .card-news .card-news-main .judul-news {
+  font-family: "Bold";
+  font-size: 1.2em;
+  color: #333333;
+  margin: 0 0 10px 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.section-news .section-news-main .content .card-news .card-news-main .news-text {
+  font-family: "Reguler";
+  font-size: 1em;
+  color: #333333;
+  margin: 0 0 20px 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+.section-news .section-news-main .content .card-news .card-news-main .judul-news,
+.section-news .section-news-main .content .card-news .card-news-main .news-text {
+  padding: 0 20px 0 0;
+}
+.section-news .section-news-main .content .card-news .card-news-main .baca-selengkapnya {
+  font-family: "Bold";
+  font-size: 1em;
+  color: #333333;
+  transition: 0.5s;
+}
+.section-news .section-news-main .content .card-news .card-news-main .baca-selengkapnya:hover {
+  color: #f7941d;
+  transition: 0.5s;
 }
 
 .foother {
@@ -635,7 +705,46 @@ body {
   font-size: 1.8em;
   text-decoration: none;
   color: #f7941d;
-  margin: 0;
+}
+
+.detail-news {
+  margin: 50px 0 50px 0;
+}
+.detail-news .detail-news-main {
+  padding: 50px 0 0 0;
+}
+.detail-news .detail-news-main .img-detail-news {
+  width: 100%;
+  height: auto;
+}
+.detail-news .detail-news-main .detail-news-judul {
+  font-family: "Bold";
+  font-size: 2em;
+  color: #f7941d;
+  margin: 50px 0 0 0;
+}
+.detail-news .detail-news-main .detail-news-publish {
+  margin: 10px 0 30px 0;
+  font-size: 0.9em;
+}
+.detail-news .detail-news-main .detail-news-text {
+  font-size: 1em;
+}
+.detail-news .detail-news-main .detail-news-sumber {
+  font-family: "Bold";
+}
+.detail-news .detail-news-main .detail-news-sumber a {
+  font-family: "Reguler";
+  text-decoration: none;
+}
+.detail-news .detail-news-main .section-news {
+  margin: 100px 0 0 0;
+}
+.detail-news .detail-news-main .section-news .section-news-main {
+  padding: 0;
+}
+.detail-news .detail-news-main .section-news .section-news-main .news-judul {
+  margin: 30px 0 50px 0;
 }
 
 @media (max-width: 575.98px) {
