@@ -732,6 +732,7 @@ body {
 }
 .detail-news .detail-news-main .detail-news-sumber {
   font-family: "Bold";
+  overflow: hidden;
 }
 .detail-news .detail-news-main .detail-news-sumber a {
   font-family: "Reguler";
@@ -745,6 +746,131 @@ body {
 }
 .detail-news .detail-news-main .section-news .section-news-main .news-judul {
   margin: 30px 0 50px 0;
+}
+
+.form-login {
+  width: 100%;
+  height: 100vh;
+}
+.form-login .form-login-main {
+  width: 100%;
+  height: 100vh;
+}
+.form-login .form-login-main .login-card {
+  width: 400px;
+  height: 400px;
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.137);
+  border-radius: 40px;
+  border: 2px solid #f7941d;
+}
+.form-login .form-login-main .login-card .login-card-main {
+  padding: 40px;
+}
+.form-login .form-login-main .login-card .login-card-main .judul {
+  font-family: "Bold";
+  font-size: 1.5em;
+  color: #f7941d;
+}
+.form-login .form-login-main .login-card .login-card-main form {
+  margin-top: 50px;
+}
+.form-login .form-login-main .login-card .login-card-main form .form-label {
+  font-family: "Bold";
+  font-size: 1em;
+}
+.form-login .form-login-main .login-card .login-card-main form input {
+  font-size: 1em;
+}
+.form-login .form-login-main .login-card .login-card-main form input:focus {
+  box-shadow: none;
+  border: 1px solid #f7941d;
+}
+.form-login .form-login-main .login-card .login-card-main form .btn-login {
+  font-family: "Bold";
+  font-size: 1em;
+  color: #fff;
+  background-color: #f7941d;
+  border: 2px solid #f7941d;
+  border-radius: 10px;
+  padding: 5px 50px;
+  margin: 20px 0 0 0;
+  transition: 0.5s;
+}
+.form-login .form-login-main .login-card .login-card-main form .btn-login:hover {
+  color: #f7941d;
+  background-color: #fff;
+  border: 2px solid #f7941d;
+  transition: 0.5s;
+}
+.form-login .form-login-main .login-card .login-card-main form .btn-login:focus {
+  box-shadow: none;
+}
+
+.navbar-admin .username {
+  font-family: "Bold";
+  margin: 0;
+}
+.navbar-admin .username .logout {
+  font-size: 1em;
+}
+
+.main-admin {
+  height: 100%;
+}
+.main-admin .container {
+  height: 100%;
+}
+.main-admin .content {
+  height: 100%;
+}
+.main-admin .content .col-2 {
+  width: 150px;
+}
+.main-admin .content .col {
+  height: 90vh;
+  overflow: scroll;
+}
+.main-admin .content .content-right {
+  padding: 40px;
+}
+.main-admin .content .content-right .judul {
+  font-family: "Bold";
+  font-size: 1.5em;
+  margin: 0 0 30px 0;
+}
+.main-admin .content .content-right .table td,
+.main-admin .content .content-right .table th {
+  font-size: 0.9em;
+}
+.main-admin .content .content-right .table td.judul-article span,
+.main-admin .content .content-right .table th.judul-article span {
+  width: 380px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.main-admin .content .side-nav {
+  border-right: 1px solid #eaeaea;
+  height: 100%;
+}
+.main-admin .content .side-nav .side-nav-main {
+  padding: 20px 0;
+  height: 100%;
+}
+.main-admin .content .side-nav .side-nav-main .btn-dropdown {
+  padding: 10px 0;
+}
+.main-admin .content .side-nav .side-nav-main ul {
+  padding: 0 0;
+  margin: 0;
+}
+.main-admin .content .side-nav .side-nav-main ul li {
+  list-style: none;
+}
+.main-admin .content .side-nav .side-nav-main ul li a:focus {
+  box-shadow: none;
+  border: none;
 }
 
 @media (max-width: 575.98px) {
@@ -769,6 +895,9 @@ body {
   }
   .foother-main ul li {
     text-align: left !important;
+  }
+  .detail-news {
+    margin: 0 0 50px 0;
   }
 }
 @media (max-width: 767.98px) {
@@ -1121,6 +1250,26 @@ body {
   }
   .section-kemitraan .kemitraan-main .pendaftaran .btn-kirim {
     font-size: 0.9em !important;
+  }
+  .section-news .section-news-main .news-judul {
+    font-size: 2em;
+  }
+  .section-news .section-news-main .all-news-wrap {
+    margin: 30px 20px 30px 0;
+  }
+  .section-news .section-news-main .col {
+    width: 290px;
+  }
+  .section-news .section-news-main .content .card-news .card-news-main .judul-news {
+    padding: 0;
+  }
+  .section-news .section-news-main .content .card-news .card-news-main .news-text {
+    padding: 0;
+  }
+  .section-news .section-news-main .content .card-news .card-news-main .img-news {
+    width: auto;
+    height: 290px;
+    margin: 0 0 15px 0;
   }
   .gallery-page .gallery-page-main .gallery .img-gallery {
     width: auto;
