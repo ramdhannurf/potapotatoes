@@ -33,13 +33,9 @@ $(".nav-menu-list").click(function () {
 });
 
 $(document).ready(function () {
-    $(".owl-carousel").owlCarousel({
-        loop: true,
-        center: true,
-        items: 1,
-        autoplay: true,
-        autoplayTimeout: 500,
-    });
+    let editor = new TextEditor("#editor", "#editor-view-raw", "#editor-element");
+
+    editor.start();
 });
 
 function send() {

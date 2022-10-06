@@ -39,6 +39,15 @@
   margin: 50px 0 0 0 !important;
 }
 
+[data-custom=main-admin-col] {
+  height: 90vh;
+  overflow: scroll;
+}
+
+[data-custom=main-admin-col-2] {
+  width: 150px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -547,6 +556,12 @@ body {
   aspect-ratio: 1/1;
   border-radius: 0;
 }
+.section-news .section-news-main .content .card-news .card-news-main .img-news h1 {
+  font-family: "Bold";
+  font-size: 1.5em;
+  color: #eaeaea;
+  margin: 0;
+}
 .section-news .section-news-main .content .card-news .card-news-main .judul-news {
   font-family: "Bold";
   font-size: 1.2em;
@@ -823,13 +838,6 @@ body {
 .main-admin .content {
   height: 100%;
 }
-.main-admin .content .col-2 {
-  width: 150px;
-}
-.main-admin .content .col {
-  height: 90vh;
-  overflow: scroll;
-}
 .main-admin .content .content-right {
   padding: 40px;
 }
@@ -849,6 +857,42 @@ body {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.main-admin .content .content-right .form-label,
+.main-admin .content .content-right .form-control {
+  font-size: 0.9em;
+}
+.main-admin .content .content-right .form-label:focus,
+.main-admin .content .content-right .form-control:focus {
+  box-shadow: none;
+  border: 1px solid #f7941d;
+}
+.main-admin .content .content-right .hb-editor {
+  width: 100%;
+  margin: 0;
+}
+.main-admin .content .content-right .hb-editor .hb-editor-elements {
+  margin-top: 0;
+}
+.main-admin .content .content-right .btn-admin-submit {
+  font-family: "Bold";
+  font-size: 0.9em;
+  color: #fff;
+  background-color: #f7941d;
+  border: 2px solid #f7941d;
+  border-radius: 10px;
+  padding: 5px 50px;
+  margin: 20px 0 0 0;
+  transition: 0.5s;
+}
+.main-admin .content .content-right .btn-admin-submit:hover {
+  color: #f7941d;
+  background-color: #fff;
+  border: 2px solid #f7941d;
+  transition: 0.5s;
+}
+.main-admin .content .content-right .btn-admin-submit:focus {
+  box-shadow: none;
 }
 .main-admin .content .side-nav {
   border-right: 1px solid #eaeaea;
@@ -1250,6 +1294,12 @@ body {
   }
   .section-kemitraan .kemitraan-main .pendaftaran .btn-kirim {
     font-size: 0.9em !important;
+  }
+  .section-news {
+    margin: 0;
+  }
+  .section-news .section-news-main {
+    padding: 30px 0;
   }
   .section-news .section-news-main .news-judul {
     font-size: 2em;

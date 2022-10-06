@@ -545,6 +545,13 @@ body {
                         height: 400px;
                         aspect-ratio: 1/1;
                         border-radius: 0;
+
+                        h1 {
+                            font-family: 'Bold';
+                            font-size: 1.5em;
+                            color: $text-color-grey;
+                            margin: 0;
+                        }
                     }
 
                     .judul-news {
@@ -871,15 +878,6 @@ body {
     .content {
         height: 100%;
 
-        .col-2 {
-            width: 150px;
-        }
-
-        .col {
-            height: 90vh;
-            overflow: scroll;
-        }
-
         .content-right {
             padding: 40px;
 
@@ -906,6 +904,29 @@ body {
                         }
                     }
                 }
+            }
+
+            .form-label,
+            .form-control {
+                font-size: 0.9em;
+
+                &:focus {
+                    box-shadow: none;
+                    border: 1px solid $bg-color-orange;
+                }
+            }
+
+            .hb-editor {
+                width: 100%;
+                margin: 0;
+
+                .hb-editor-elements {
+                    margin-top: 0;
+                }
+            }
+
+            .btn-admin-submit {
+                @include btn-admin-submit;
             }
         }
         

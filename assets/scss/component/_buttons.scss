@@ -131,3 +131,26 @@
 @mixin btn-dropdown {
     padding: 10px 0;
 }
+
+@mixin btn-admin-submit {
+    font-family: 'Bold';
+    font-size: 0.9em;
+    color: $text-color-white;
+    background-color: $bg-color-orange;
+    border: 2px solid $bg-color-orange;
+    border-radius: 10px;
+    padding: 5px 50px;
+    margin: 20px 0 0 0;
+    transition: 0.5s;
+
+    &:hover {
+        color: $text-color-orange;
+        background-color: $bg-color-white;
+        border: 2px solid $bg-color-orange;
+        transition: 0.5s;
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+}
