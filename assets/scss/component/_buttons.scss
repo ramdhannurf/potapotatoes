@@ -154,3 +154,31 @@
         box-shadow: none;
     }
 }
+
+@mixin btn-edit-article {
+    font-size: 1em;
+    padding: 0;
+
+    &:hover {
+        color: $text-color-orange;
+    }
+
+    &:focus {
+        box-shadow: none;
+        border: none;
+    }
+}
+
+@mixin btn-hapus-article {
+    font-size: 1em;
+    padding: 0;
+
+    &:hover {
+        color: $text-color-orange;
+    }
+
+    &:focus {
+        box-shadow: none;
+        border: none;
+    }
+}

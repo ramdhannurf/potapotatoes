@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="css/fontawesome.min.css" />
         <link rel="stylesheet" href="css/main.min.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.17/dist/css/splide.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.38/dist/sweetalert2.min.css" />
     </head>
     <body>
         <nav class="navbar navbar-expand-lg custom-navbar navbar-admin" data-custom="border-bottom">
@@ -56,8 +57,6 @@
                                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                                 <li><a class="dropdown-item" href="daftar-article.html">Daftar Article</a></li>
                                                 <li><a class="dropdown-item" href="tambah-article.html">Tambah Article</a></li>
-                                                <li><a class="dropdown-item" href="edit-article.html">Edit Article</a></li>
-                                                <li><a class="dropdown-item" href="#">Hapus Article</a></li>
                                             </ul>
                                         </div>
                                     </li>
@@ -75,9 +74,8 @@
                                             </a>
 
                                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                <li><a class="dropdown-item" href="#">Daftar Foto</a></li>
-                                                <li><a class="dropdown-item" href="#">Tambah Foto</a></li>
-                                                <li><a class="dropdown-item" href="#">Hapus Foto</a></li>
+                                                <li><a class="dropdown-item" href="daftar-gallery.html">Daftar Foto</a></li>
+                                                <li><a class="dropdown-item" href="tambah-gallery.html">Tambah Foto</a></li>
                                             </ul>
                                         </div>
                                     </li>
@@ -117,7 +115,7 @@
                                         <div id="editor-view-raw" style="margin: 15px; display: none"></div>
                                     </div>
                                 </div>
-                                <a href="#" type="sumbit" class="btn btn-admin-submit">Tambah</a>
+                                <a href="#" type="sumbit" class="btn btn-admin-submit" id="btn-tambah-article">Tambah</a>
                             </form>
                         </div>
                     </div>
@@ -135,4 +133,5 @@
     <script src="../assets/js/main.js"></script>
     <script src="js/texteditor.js"></script>
     <script src="js/jquery-fieldselection.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.38/dist/sweetalert2.all.min.js"></script>
 </html>

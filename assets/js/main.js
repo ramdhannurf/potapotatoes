@@ -20,6 +20,112 @@ document.addEventListener("DOMContentLoaded", function () {
     dua.mount();
 });
 
+$("#admin-login").click(function () {
+    Swal.fire("Berhasil !!", "Article Berhasil Ditambahkan", "success");
+});
+
+$("#btn-tambah-article").click(function () {
+    Swal.fire("Berhasil !!", "Article Berhasil Ditambahkan", "success");
+});
+
+$("#btn-tambah-gallery").click(function () {
+    Swal.fire("Berhasil !!", "Foto Berhasil Ditambahkan", "success");
+});
+
+$("#btn-tambah-admin").click(function () {
+    Swal.fire("Berhasil !!", "'Nama Admin' Berhasil Ditambahkan", "success");
+});
+
+$("#btn-hapus-article").click(function () {
+    Swal.fire({
+        title: "Apakah kamu yakin ingin menghapus article ini ?",
+        showCancelButton: true,
+        confirmButtonText: "Ya, Yakin",
+        cancelButtonText: "Tidak, Batalkan",
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire("Berhasil !", "Article Berhasil Dihapus", "success");
+        } else if (result.isDenied) {
+            Swal.fire("Perubahan Tidak Disimpan", "", "info");
+        }
+    });
+});
+
+$("#btn-hapus-gallery").click(function () {
+    Swal.fire({
+        title: "Apakah kamu yakin ingin menghapus foto ini ?",
+        showCancelButton: true,
+        confirmButtonText: "Ya, Yakin",
+        cancelButtonText: "Tidak, Batalkan",
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire("Berhasil !", "Foto Berhasil Dihapus", "success");
+        } else if (result.isDenied) {
+            Swal.fire("Perubahan Tidak Disimpan", "", "info");
+        }
+    });
+});
+
+$("#btn-hapus-admin").click(function () {
+    Swal.fire({
+        title: "Apakah kamu yakin ingin menghapus 'Nama Admin' ini ?",
+        showCancelButton: true,
+        confirmButtonText: "Ya, Yakin",
+        cancelButtonText: "Tidak, Batalkan",
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire("Berhasil !", "'Nama Admin' Berhasil Dihapus", "success");
+        } else if (result.isDenied) {
+            Swal.fire("Perubahan Tidak Disimpan", "", "info");
+        }
+    });
+});
+
+$("#btn-edit-terapkan").click(function () {
+    Swal.fire({
+        title: "Apakah kamu yakin ingin mengubah article ini ?",
+        showCancelButton: true,
+        confirmButtonText: "Ya, Yakin",
+        cancelButtonText: "Tidak, Batalkan",
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire("Berhasil !", "Article Berhasil Diubah", "success");
+        } else if (result.isDenied) {
+            Swal.fire("Perubahan Tidak Disimpan", "", "info");
+        }
+    });
+});
+
+$("#btn-edit-terapkan-gallery").click(function () {
+    Swal.fire({
+        title: "Apakah kamu yakin ingin mengubah foto ini ?",
+        showCancelButton: true,
+        confirmButtonText: "Ya, Yakin",
+        cancelButtonText: "Tidak, Batalkan",
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire("Berhasil !", "Foto Berhasil Diubah", "success");
+        } else if (result.isDenied) {
+            Swal.fire("Perubahan Tidak Disimpan", "", "info");
+        }
+    });
+});
+
+$("#btn-edit-admin").click(function () {
+    Swal.fire({
+        title: "Apakah kamu yakin ingin mengubah informasi 'Nama Admin' ini ?",
+        showCancelButton: true,
+        confirmButtonText: "Ya, Yakin",
+        cancelButtonText: "Tidak, Batalkan",
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire("Berhasil !", "Informasi 'Nama Admin' Berhasil Diubah", "success");
+        } else if (result.isDenied) {
+            Swal.fire("Perubahan Tidak Disimpan", "", "info");
+        }
+    });
+});
+
 $("#navMenuOpen").click(function () {
     $("#openNav").css("display", "block");
 });

@@ -896,18 +896,33 @@ body {
                     &.judul-article {
                         
                         span {
-                            width: 380px;
+                            width: 150px;
                             display: block;
                             overflow: hidden;
                             white-space: nowrap;
                             text-overflow: ellipsis;
                         }
+
+                        img {
+                            width: 50px;
+                            height: auto;
+                            border-radius: 5px
+                        }
                     }
+                }
+
+                .btn-edit-article {
+                    @include btn-edit-article;
+                }
+                
+                .btn-hapus-article {
+                    @include btn-hapus-article;
                 }
             }
 
             .form-label,
-            .form-control {
+            .form-control,
+            .form-check-label {
                 font-size: 0.9em;
 
                 &:focus {

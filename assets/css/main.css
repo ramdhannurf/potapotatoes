@@ -852,18 +852,48 @@ body {
 }
 .main-admin .content .content-right .table td.judul-article span,
 .main-admin .content .content-right .table th.judul-article span {
-  width: 380px;
+  width: 150px;
   display: block;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+.main-admin .content .content-right .table td.judul-article img,
+.main-admin .content .content-right .table th.judul-article img {
+  width: 50px;
+  height: auto;
+  border-radius: 5px;
+}
+.main-admin .content .content-right .table .btn-edit-article {
+  font-size: 1em;
+  padding: 0;
+}
+.main-admin .content .content-right .table .btn-edit-article:hover {
+  color: #f7941d;
+}
+.main-admin .content .content-right .table .btn-edit-article:focus {
+  box-shadow: none;
+  border: none;
+}
+.main-admin .content .content-right .table .btn-hapus-article {
+  font-size: 1em;
+  padding: 0;
+}
+.main-admin .content .content-right .table .btn-hapus-article:hover {
+  color: #f7941d;
+}
+.main-admin .content .content-right .table .btn-hapus-article:focus {
+  box-shadow: none;
+  border: none;
+}
 .main-admin .content .content-right .form-label,
-.main-admin .content .content-right .form-control {
+.main-admin .content .content-right .form-control,
+.main-admin .content .content-right .form-check-label {
   font-size: 0.9em;
 }
 .main-admin .content .content-right .form-label:focus,
-.main-admin .content .content-right .form-control:focus {
+.main-admin .content .content-right .form-control:focus,
+.main-admin .content .content-right .form-check-label:focus {
   box-shadow: none;
   border: 1px solid #f7941d;
 }
